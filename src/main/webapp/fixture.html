@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XPectable fixture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="resources/css/fixture.css">
+
+
+</head>
+<body>
+
+   <nav class="menu_box">
+      <div class="logo">
+          <hr />
+          <a href="index.html"><h3><b style="color:#FC6736;font-size:35px">XP</b>ectable</h3></a>
+          <hr />
+      </div>
+      <ul>
+          <li><a class="home" href="index.html"><i class="fa fa-home fa-fw"></i>
+              Home</a></li>
+          <li><a href="fixture.html"><i class="fa fa-calendar fa-fw"></i>
+              Fixture</a></li>
+          <li><a href="standing.html"><i class="fa-solid fa-ranking-star fa-fw"></i>
+              Standing</a></li>
+          <li><a href="prediction.html"><i class="fa-solid fa-circle-question fa-fw"></i>
+              Prediction</a></li>
+          <li><a href="contact.html"><i class="fa fa-envelope fa-fw"></i>
+              Contact</a></li>
+          <li><a href="#"><i class="fa fa-comment fa-fw"></i>
+              Feedback</a></li>
+          <div class="social_media">
+              <a href="#"><i class="fa-brands fa-linkedin" style="color:#EFECEC"></i></a>
+              <a href="#"><i class="fa-brands fa-github" style="color:#EFECEC"></i></a>
+          </div>
+      </ul>
+   </nav>
+
+  <div class="filter-dropdown">
+      <label for="drop-btn" class="dropdown-label">Filter:</label>
+      <button onclick="dropdownFunction()" id="drop-btn" class="dropdown-btn">All</button>
+      <ul id="drop-content" class="dropdown-content">
+         <!-- <li><a href="#All">Filter: All</a></li> --> 
+         <li><a href="#MA">Massachusetts</a>
+            <ul>
+               <li><a href="#MA-D1">Division 1</a></li>
+               <li><a href="#MA-D2">Division 2</a></li>
+            </ul>
+         </li>
+         <li><a href="#NJ">New Jersey</a>
+            <ul>
+                <li><a href="#NJ-D1">Division 1</a></li>
+                <li><a href="#NJ-D2">Division 2</a></li>
+             </ul>
+        </li>
+         <li><a href="#NY">New York</a>
+            <ul>
+                <li><a href="#NY-D1">Division 1</a></li>
+                <li><a href="#NY-D2">Division 2</a></li>
+             </ul>
+        </li>
+         <li><a href="#PA">Pennsylvania</a>
+            <ul>
+                <li><a href="#PA-D1">Division 1</a></li>
+                <li><a href="#PA-D2">Division 2</a></li>
+             </ul>
+        </li>
+         <li><a href="#VA">Virginia</a>
+            <ul>
+                <li><a href="#VA-D1">Division 1</a></li>
+                <li><a href="#VA-D2">Division 2</a></li>
+             </ul>
+        </li>
+      </ul>
+  </div>
+  
+  <form style="text-align:center; margin-top: 80px;"  action="add" method="post">
+		Enter 1st number: <input style="text-align:center" type="text" name="num1"><br>
+		Enter an operand: <input style="text-align:center" type="text" name="op"><br>
+		Enter 2st number: <input style="text-align:center" type="text" name="num2"><br><br>
+		<input type="submit" value="calculate">
+	</form>
+
+<footer>
+    <p> Allan Emmanuel<br>
+        <a style="text-decoration:none" href="mailto:allanfrelens@gamil.com">allanfrelens@gamil.com</a></p>
+    <div class="social_media_footer">
+        <a href="#"><i class="fa-brands fa-linkedin" style="color:#0C2D57"></i></a>
+        <a href="#"><i class="fa-brands fa-github" style="color:#0C2D57"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+<script src="resources\js\fixture.js"></script>
+</body>
+</html>
