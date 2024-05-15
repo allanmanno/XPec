@@ -19,7 +19,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fake_league", "root", "2636");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fake_league", "root", "MyPass123!");
             stmt = conn.prepareStatement("SELECT DISTINCT game_date FROM game ORDER BY game_date");
             rs = stmt.executeQuery();
 

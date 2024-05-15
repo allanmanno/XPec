@@ -121,6 +121,126 @@ table th{
     color: #0C2D57;
 }
 
+/*********************************/
+
+.filter-dropdown{
+    position: relative;
+    left: 40%;
+    top: 50px;
+    .dropdown-btn{
+        width: 200px;
+        height: 25px;
+        cursor: pointer;
+        background: #ffffff;
+        text-align: center;
+        position: relative;
+    }
+    .dropdown-btn:hover{
+        border: 1px solid rgba(0, 0, 0, 1);
+    }
+    .dropdown-btn::after {
+        content: "▼"; /* Change this to 'v' or any other symbol */
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+    .dropdown-btn:hover::after {
+        color:grey; /* Change this as needed */
+    }
+    .dropdown-label{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 200px;
+        overflow: inherit;
+        background-color: #ffffff;
+        text-align: left;
+        list-style: none;
+        left: 67px;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+        
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        display: block;
+        color: #000;
+    }
+    ul a:hover{
+        background-color: gray;
+        box-shadow:-10px 0 0 gray;
+        color: #ffffff;
+        width: 189px;
+        transition: all 0.3s ease;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid black;
+    }
+    ul li {
+        /* Adjust margin or padding as needed */
+        margin-right: 0; /* or padding-right: 0; */
+        padding-left: 10px;
+        border-bottom: 0.1px solid rgb(160, 160, 160);
+        width:200px;
+	    float:none;
+	    display:list-item;
+	    position: relative;
+    }
+    ul li::after {
+        content: "\27A4"; /* Change this to 'v' or any other symbol */
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+    ul:hover::after {
+        color:grey; /* Change this as needed */
+    }
+    /* Hide Dropdowns by Default */
+    ul ul {
+        display: none;
+        position: absolute; /* Position at the top of the page */
+        background-color: #ffffff;
+        position: absolute;
+        top:5px; 
+	    left:200px;
+        width: 90px;
+        border-radius: 0;
+
+    }
+    ul ul a:hover{
+        background-color: gray;
+        box-shadow:-10px 0 0 gray;
+        color: #ffffff;
+        width: 80px;
+        transition: all 0.3s ease;
+    }
+
+/* Display Dropdowns on Hover */
+    ul li:hover > ul {
+        display: inherit; /* Change to block to show */
+        transition: all 0.3s ease;
+    }
+    ul ul li{
+        position: relative;
+        width: 89px;
+	
+    }
+    ul ul li::after{
+        content: none;
+    }
+    
+}
+
 /******************************/
 footer {
   text-align: center;
